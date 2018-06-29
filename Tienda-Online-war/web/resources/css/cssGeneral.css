@@ -11,6 +11,7 @@ and open the template in the editor.
 .ui-body{
     border: 2px solid #CE0071;
     top: 0px;
+    /*background-color: #CE0071;*/
     bottom: 0px;
     color: #FF9900 !important;
 }
@@ -39,8 +40,24 @@ and open the template in the editor.
     height: 20px
 }
 
-.ui-footer{
+.ui-titulos{
+    font-size: 16px !important;
+    line-height: 2;
+}
 
+.ui-social-icon{
+    color: #FFFF00;
+    height: 30px;
+    width: 50px;
+}
+
+.ui-btn-social{
+    background-color: #CE0071 !important;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    height: 30px;
 }
 
 .ui-widget-content {
@@ -50,10 +67,15 @@ and open the template in the editor.
     color: #FF9900;
 }
 
-.ui-menu-link-superior {
-    
+.ui-footer{
+    color: #FFFF00 !important;
+    float: left;
 }
 
+.ui-icon-footer{
+    color: #FFFF00 !important;
+    float: right;
+}
 #top {
     position: relative;
     vertical-align: central !important;
@@ -61,4 +83,11 @@ and open the template in the editor.
     line-height: 20px;
     padding: 0px;
     margin: 0px 0px 10px 0px;
+}
+
+#bottom {
+    position: relative;
+    background-color: #CE0071;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
 }
