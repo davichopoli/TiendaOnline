@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
+                xmlns:p="http://primefaces.org/ui">
+    <center>
+        <div class="ui-fluid">
+            <p:panelGrid  columns="1" 
+                          columnClasses="ui-grid-col-12"
+                          layout="grid"  >
+                <p:panelGrid  columns="3"  
+                              columnClasses="ui-grid-col-4,ui-grid-col-4,ui-grid-col-4"
+                              layout="grid"  >
+                    <p:panelGrid  columns="1" 
+                                  columnClasses="ui-grid-col-12"
+                                  layout="grid"  >
+                        <p:outputLabel value="Contacto" styleClass="ui-titulos" />
+                    </p:panelGrid>
+                    <p:panelGrid  columns="1" 
+                                  columnClasses="ui-grid-col-12"
+                                  layout="grid"  >
+                        <p:outputLabel value="Secciones" styleClass="ui-titulos" />
+                        <br/>
+                        <p:panelGrid  columns="2" 
+                                      columnClasses="ui-grid-col-5, ui-grid-col-7"
+                                      layout="grid"  >
+                            <i class="fas fa-caret-right ui-icon-footer" /><p:commandLink value="Inicio" class="ui-footer" />
+                            <i class="fas fa-caret-right ui-icon-footer" /><p:commandLink value="¿Quiénes somos?" class="ui-footer"/>
+                            <i class="fas fa-caret-right ui-icon-footer" /><p:commandLink value="Categorías" class="ui-footer"/>
+                            <i class="fas fa-caret-right ui-icon-footer" /><p:commandLink value="Contáctanos" class="ui-footer"/>
+                        </p:panelGrid>
+
+                    </p:panelGrid>
+                    <p:panelGrid  columns="1" 
+                                  columnClasses="ui-grid-col-12"
+                                  layout="grid"  >
+                        <p:outputLabel value="Siguenos en" styleClass="ui-titulos" />
+                        <br/>
+                        <br/>
+                        <p:panelGrid  columns="3" 
+                                      columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4"
+                                      layout="grid">
+                            <button class="ui-btn-social"><i class="fab fa-twitter ui-social-icon"/></button>
+                            <button class="ui-btn-social"><i class="fab fa-facebook-f ui-social-icon"/></button>
+                            <button class="ui-btn-social"><i class="fab fa-instagram ui-social-icon"/></button>
+                        </p:panelGrid>
+                        <br/>
+                    </p:panelGrid> 
+                </p:panelGrid>
+                <p:outputLabel value="IMPORTADORA MAGROX | Desarrollor web -  Kuntur AR" styleClass ="ui-footer" style="float: none"  />
+            </p:panelGrid>
+
+        </div>
+    </center>
+
+</ui:composition>
