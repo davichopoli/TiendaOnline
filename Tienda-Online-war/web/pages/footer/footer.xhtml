@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
-                xmlns:p="http://primefaces.org/ui">
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
     <center>
         <div class="ui-fluid">
             <p:panelGrid  columns="1" 
@@ -14,6 +15,13 @@
                                   columnClasses="ui-grid-col-12"
                                   layout="grid"  >
                         <p:outputLabel value="Contacto" styleClass="ui-titulos" />
+                        <br/>
+                        <p:outputLabel value="Dirección" styleClass="ui-footer" style="float: left !important" />
+                        <p:outputLabel value="&nbsp;&nbsp;&nbsp;Conjunto 6 de Junio Etapa II M6C8" styleClass="ui-footer" style="float: left !important" />
+                        <p:outputLabel value="Teléfono" styleClass="ui-footer" style="float: left !important" />
+                        <p:outputLabel value="&nbsp;&nbsp;&nbsp;(02)-6042644 / 0989103055" styleClass="ui-footer" style="float: left !important" />
+                        <p:outputLabel value="Email" styleClass="ui-footer" style="float: left !important" />
+                        <p:outputLabel value="&nbsp;&nbsp;&nbsp;mail@magrox.com" styleClass="ui-footer" style="float: left !important" />
                     </p:panelGrid>
                     <p:panelGrid  columns="1" 
                                   columnClasses="ui-grid-col-12"
@@ -39,9 +47,15 @@
                         <p:panelGrid  columns="3" 
                                       columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4"
                                       layout="grid">
-                            <button class="ui-btn-social"><i class="fab fa-twitter ui-social-icon"/></button>
-                            <button class="ui-btn-social"><i class="fab fa-facebook-f ui-social-icon"/></button>
-                            <button class="ui-btn-social"><i class="fab fa-instagram ui-social-icon"/></button>
+                            <p:commandLink >
+                                <i class="fab fa-twitter ui-btn-social" style="width: 30px;height: 30px" />
+                            </p:commandLink>
+                            <p:commandLink >
+                                <i class="fab fa-facebook-f ui-btn-social" style="width: 30px;height: 30px" />
+                            </p:commandLink>
+                            <p:commandLink >
+                                <i class="fab fa-instagram ui-btn-social" style="width: 30px;height: 30px" />
+                            </p:commandLink>
                         </p:panelGrid>
                         <br/>
                     </p:panelGrid> 
