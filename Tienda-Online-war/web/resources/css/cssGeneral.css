@@ -41,7 +41,7 @@ and open the template in the editor.
 }
 
 .ui-titulos{
-    font-size: 16px !important;
+    font-size: 17px !important;
     line-height: 2;
 }
 
@@ -52,12 +52,21 @@ and open the template in the editor.
 }
 
 .ui-btn-social{
-    background-color: #CE0071 !important;
-    border: none; /* Remove borders */
-    color: white; /* White text */
+    background: #CE0071 !important;
+    border: none !important; /* Remove borders */
+    color: #FFFF00 !important; /* White text */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
-    height: 30px;
+    height: 40px;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.ui-btn-social:hover {
+    background: #CE0071 !important; /* Green */
+    text-shadow: none;
+    color: #FF9900 !important; 
 }
 
 .ui-widget-content {
@@ -90,4 +99,8 @@ and open the template in the editor.
     background-color: #CE0071;
     padding: 5px;
     margin: 10px 0px 0px 0px;
+}
+
+.ui-panelgrid .ui-grid-responsive .ui-grid-row {
+    border-top: 0px solid #bcc7cf !important;
 }
